@@ -1,0 +1,20 @@
+os: linux
+language: python
+
+jobs:
+  include:
+    - dist: focal
+      arch: amd64
+      group: dev
+      script:
+        - python3 hello_world.py
+    - dist: bionic
+      arch: amd64
+      group: dev
+      script:
+        - python3 hello_world.py
+    - dist: xenial
+      arch: amd64
+      group: dev
+      script:
+        - python3 hello_world.py
