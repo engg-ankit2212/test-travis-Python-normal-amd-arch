@@ -5,16 +5,16 @@ jobs:
   include:
     - dist: focal
       arch: amd64
-      group: dev
+      group: edge
       script:
         - python hello_world.py
     - dist: bionic
       arch: amd64
-      group: dev
+      group: edge
       script:
         - python hello_world.py
     - dist: xenial
       arch: amd64
-      group: dev
+      group: edge
       script:
         - python hello_world.py
